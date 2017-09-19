@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Stuff</h1>
+	<select id="engine">
+		<option value="morphdom">morphdom</option>
+		<option value="morphdom">nanomorph</option>
+	</select>
+	<button type="button" id="add">Add one</button>
+	<button type="button" id="add100">Add 100</button>
+	<button type="button" id="add1000">Add 1k (batch)</button>
+	<button type="button" id="add10000">Add 10k (batch)</button>
+	<button type="button" id="clear">Clear</button>
+	<ul id="stuff"></ul>
+	<style>
+		#stuff { width: 100%; font-size: 13px; font-family: sans-serif; }
+		#stuff .remove { cursor: pointer; }
+		#stuff .remove:hover { color: red; }
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js"></script>
+	<script src="https://cdn.rawgit.com/patrick-steele-idem/morphdom/master/dist/morphdom-umd.js"></script>
+	<script src="https://cdn.rawgit.com/DylanPiercey/set-dom/master/dist/set-dom.js"></script>
+	<script src="https://cdn.rawgit.com/tbranyen/diffhtml/master/dist/diffhtml.js"></script>
+	<script src="nanomorph.js"></script>
+	<script src="demo.js"></script>
+</body>
+</html>
